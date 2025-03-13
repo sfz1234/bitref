@@ -1,0 +1,311 @@
+/* 全局样式 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+/* 覆盖所有可能的白色背景 */
+*, *::before, *::after {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认背景色 */
+.bg-dark, .bg-white, .bg-light {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认卡片样式 */
+.card, .card-body, .card-header, .card-footer {
+    background-color: #000000 !important;
+    border-color: #1a1a1a !important;
+}
+
+/* 覆盖 Bootstrap 默认section样式 */
+section, .section {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认container样式 */
+.container, .container-fluid {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认row样式 */
+.row {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认col样式 */
+[class*="col-"] {
+    background-color: #000000 !important;
+}
+
+/* 覆盖 Bootstrap 默认文本颜色 */
+.text-dark, .text-body {
+    color: #ffffff !important;
+}
+
+/* 覆盖 Bootstrap 默认边框颜色 */
+.border {
+    border-color: #1a1a1a !important;
+}
+
+/* 英雄区域样式 */
+.hero-section {
+    background: #000000 !important;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: #a0aec0;
+}
+
+/* 卡片样式 */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #a0aec0;
+}
+
+/* 交易所返利模块样式 */
+.exchange-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000000 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.exchange-card .card-img-top {
+    height: 120px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #000000 !important;
+}
+
+.exchange-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000 !important;
+}
+
+.exchange-card .card-title {
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+.exchange-card .card-text {
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+.exchange-card .rebate-info {
+    margin: 1rem 0;
+    background-color: #000000 !important;
+}
+
+.exchange-card .invite-code {
+    background-color: #1a1a1a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #60faf2;
+}
+
+.exchange-card .fee-details {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    background-color: #000000 !important;
+}
+
+.exchange-card .fee-details p {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+/* 按钮样式 */
+.btn-success {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.btn-success:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: 50px;
+    background-color: #000000 !important;
+    border-top: 1px solid #1a1a1a;
+}
+
+footer .container {
+    background-color: #000000 !important;
+}
+
+footer .row {
+    background-color: #000000 !important;
+}
+
+footer .col-md-6 {
+    background-color: #000000 !important;
+}
+
+footer h5 {
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+footer p {
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+footer a {
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+footer .text-muted {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+}
+
+footer .bg-dark {
+    background-color: #000000 !important;
+}
+
+footer .bg-light {
+    background-color: #000000 !important;
+}
+
+footer .bg-white {
+    background-color: #000000 !important;
+}
+
+/* 章节标题样式 */
+section h2 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .exchange-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .fee-details {
+        font-size: 0.85rem;
+    }
+}
+
+/* 活动图片样式 */
+.activity-images {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #000000;
+    border-bottom: 1px solid #1a1a1a;
+    flex-wrap: wrap;
+}
+
+.activity-img {
+    flex: 1;
+    min-width: 300px;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #111111;
+    padding: 0.5rem;
+}
+
+/* 活动内容样式 */
+.activity-content {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.activity-content h6 {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.activity-content ol {
+    padding-left: 1.5rem;
+}
+
+.activity-content li {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.activity-content .card-text {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.activity-content .mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .activity-img {
+        min-width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .activity-images {
+        flex-direction: column;
+    }
+} 
